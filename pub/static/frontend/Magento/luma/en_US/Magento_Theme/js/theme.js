@@ -1,0 +1,1 @@
+/home/aparna/Documents/projects/Magento/vendor/magento/theme-frontend-blank/Magento_Theme/web/js/theme.js

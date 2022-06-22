@@ -1,0 +1,1 @@
+/home/aparna/Documents/projects/Magento/vendor/magento/module-catalog/view/frontend/web/js/product/storage/data-storage.js

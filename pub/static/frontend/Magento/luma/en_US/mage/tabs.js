@@ -1,0 +1,1 @@
+/home/aparna/Documents/projects/Magento/lib/web/mage/tabs.js
