@@ -884,3 +884,32 @@ If you still want to deploy in these modes, use -f option: 'bin/magento setup:st
 [2022-06-22 12:18:36] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_report_reviews was processed [] []
 [2022-06-22 12:18:36] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_reviews_external was processed [] []
 [2022-06-22 12:18:36] main.INFO: Add of item with id Yotpo_Yotpo::yotpo_analytics_external was processed [] []
+[2022-06-23 06:51:58] main.ERROR: The CMS page with the "0" ID doesn't exist. [] []
+[2022-06-23 06:52:05] main.ERROR: The CMS page with the "0" ID doesn't exist. [] []
+[2022-06-23 07:08:06] main.ERROR: The CMS page with the "0" ID doesn't exist. [] []
+[2022-06-23 10:03:04] main.CRITICAL: ParseError: syntax error, unexpected 'World' (T_STRING), expecting ')' in /home/aparna/Documents/projects/Magento/app/code/Eglobe/StoreModule/Controller/Page/View.php:18
+Stack trace:
+#0 /home/aparna/Documents/projects/Magento/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#2 [internal function]: spl_autoload_call()
+#3 /home/aparna/Documents/projects/Magento/vendor/magento/framework/App/Router/ActionList.php(127): is_subclass_of()
+#4 /home/aparna/Documents/projects/Magento/vendor/magento/framework/App/Router/Base.php(301): Magento\Framework\App\Router\ActionList->get()
+#5 /home/aparna/Documents/projects/Magento/vendor/magento/framework/App/Router/Base.php(167): Magento\Framework\App\Router\Base->matchAction()
+#6 /home/aparna/Documents/projects/Magento/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Router\Base->match()
+#7 /home/aparna/Documents/projects/Magento/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\Router\Base\Interceptor->___callParent()
+#8 /home/aparna/Documents/projects/Magento/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\Router\Base\Interceptor->Magento\Framework\Interception\{closure}()
+#9 /home/aparna/Documents/projects/Magento/generated/code/Magento/Framework/App/Router/Base/Interceptor.php(23): Magento\Framework\App\Router\Base\Interceptor->___callPlugins()
+#10 /home/aparna/Documents/projects/Magento/vendor/magento/framework/App/FrontController.php(144): Magento\Framework\App\Router\Base\Interceptor->match()
+#11 /home/aparna/Documents/projects/Magento/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#12 /home/aparna/Documents/projects/Magento/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#13 /home/aparna/Documents/projects/Magento/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(99): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#14 /home/aparna/Documents/projects/Magento/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+#15 /home/aparna/Documents/projects/Magento/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#16 /home/aparna/Documents/projects/Magento/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#17 /home/aparna/Documents/projects/Magento/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#18 /home/aparna/Documents/projects/Magento/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#19 /home/aparna/Documents/projects/Magento/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#20 /home/aparna/Documents/projects/Magento/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#21 /home/aparna/Documents/projects/Magento/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
+#22 /home/aparna/Documents/projects/Magento/pub/index.php(29): Magento\Framework\App\Bootstrap->run()
+#23 {main} [] []
