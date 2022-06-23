@@ -1,5 +1,5 @@
 <?php
-
+//Register module
 use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
@@ -8,4 +8,4 @@ ComponentRegistrar::register(
     __DIR__
 );
 
-//bjhbihjbnjnojnokjnkjnknm
+
