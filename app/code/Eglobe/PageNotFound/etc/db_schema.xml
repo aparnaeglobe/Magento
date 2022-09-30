@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+     <table name="page_search_log_table">
+        <column xsi:type="int" name="id" padding="10" unsigned="true" identity="true" nullable="false" comment="Id"/>
+        <column xsi:type="varchar" name="pageurl" nullable="false" length="255" comment="Page Url"/>
+        <column xsi:type="int" name="count" padding="10" unsigned="true" nullable="false" comment="Count"/>
+        <column xsi:type="timestamp" name="created_at" on_update="false" nullable="false" default="CURRENT_TIMESTAMP" comment="Created At"/>
+        <column xsi:type="timestamp" name="updated_at" on_update="true" nullable="true" default="CURRENT_TIMESTAMP" comment="Updated At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+   </table>
+</schema>
+
+
+
+

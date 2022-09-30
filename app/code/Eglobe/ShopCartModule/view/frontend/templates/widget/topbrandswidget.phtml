@@ -1,0 +1,18 @@
+ <div class="brand-section">
+    <div class="page-main">
+        <div class="content-heading white">
+            <h2 class="title">Top <span> Brands </span></h2>
+        </div>
+        <div class="brand-main owl-carousel owl-theme">
+        <?php $categories = $this->getCategoryCollection(); ?>
+        <?php foreach($categories as $category):?>
+            <div class="brand-cont">
+                <img src="<?php echo $block->escapeUrl($category->getImageUrl()) ?>" alt="" width="<?=$this->getImageWidth();?>" height="<?=$this->getImageHeight()?>"/>
+                <div class="brandlogo">
+              
+<img src="<?php echo $block->escapeUrl($category->getData('thumbnail'));?>" alt="" /></div>
+            </div>   
+        <?php endforeach; ?>
+        </div>
+    </div>
+</div>

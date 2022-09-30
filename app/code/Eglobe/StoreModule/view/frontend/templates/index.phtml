@@ -1,0 +1,15 @@
+<?php 
+//use Eglobe\StoreModule\Block;
+echo "hiiii";
+$all =$block->Storelist();
+foreach($all as $store){
+    echo $block->getStoreId() . '<br />';
+    // echo $store->getName() . '<br />';
+    echo $store->getStoreCode() . '<br />';
+    echo $store->getWebsiteId() . '<br />';
+    echo $store->getStoreName() . '<br />';
+    echo $store->getStoreUrl() . '<br />';
+    echo $store->isStoreActive() . '<br />';
+}
+
+?>

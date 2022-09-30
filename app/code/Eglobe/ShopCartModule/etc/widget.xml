@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+    <widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+                
+                <widget class="Eglobe\ShopCartModule\Block\Widget\TopBrandswidget" id="eglobe_shopcart_topbrandswidget">
+                            <label>ShopCartModule Top Brands Widget</label>
+                            <description></description>
+                                <parameters>
+                                        <parameter name="widgettitle" sort_order="10" visible="true" xsi:type="text">
+                                                    <label>Top Brands</label>
+                                        </parameter>
+                                        <!-- <parameter name="widgetcontent" sort_order="20" visible="true" xsi:type="textarea">
+                                                    <label>Content</label>
+                                        </parameter> -->
+                                </parameters> 
+                </widget>
+                <widget class="Eglobe\ShopCartModule\Block\Widget\TopCategorieswidget" id="eglobe_shopcart_topcategorieswidget">
+                            <label>ShopCartModule Top Category Widget</label>
+                            <description></description>
+                                <parameters>
+                                        <parameter name="widgettitle" sort_order="11" visible="true" xsi:type="text">
+                                                    <label>Top Categories</label>
+                                        </parameter>
+                                </parameters> 
+                </widget>
+                
+    </widgets>
+       

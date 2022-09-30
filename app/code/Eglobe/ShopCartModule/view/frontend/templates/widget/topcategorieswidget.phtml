@@ -1,0 +1,16 @@
+<div class="categories-section">
+    <div class="page-main">
+        <div class="content-heading">
+            <h2 class="title">Top <span> Categories </span></h2>
+        </div>
+        <div class="category-perant owl-carousel owl-theme">
+        <?php $categories = $this->getCategoryCollection(); ?>
+                    <?php foreach($categories as $category):?>
+                        <div class="category-div">
+                            <div class="icon"> <img src="<?php echo $block->escapeUrl($category->getImageUrl()) ?>" alt="" width="<?=$this->getImageWidth();?>" height="<?=$this->getImageHeight()?>"/></div>
+                            <a href="#"><p><?php echo $category->getName();?></p></a>
+                        </div>       
+                    <?php endforeach; ?>
+        </div>
+    </div>
+</div>

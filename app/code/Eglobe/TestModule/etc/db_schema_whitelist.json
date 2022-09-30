@@ -1,0 +1,10 @@
+{
+    "demo": {
+        "column": {
+            "column_name": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

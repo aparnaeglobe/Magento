@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eglobe\StoreModule\Controller\Page;
+namespace Eglobe\SampleBlock\Controller\Page;
 
 use Magento\Framework\Controller\Result\Json;
 use Magento\Framework\App\Action\Action;
@@ -12,7 +12,7 @@ class View extends Action
 {
     public function execute() {
 		
-		echo "Hello World!";
+		echo "View file in Sample Block has got preference over view on Store Module!";
        
     }
 }

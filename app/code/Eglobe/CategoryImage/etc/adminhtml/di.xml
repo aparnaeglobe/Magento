@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Eglobe\CategoryImage\Controller\Adminhtml\Category\Thumbnail\Upload">
+        <arguments>
+            <argument name="imageUploader" xsi:type="object">Magento\Catalog\CategoryImageUpload</argument>
+        </arguments>
+    </type>
+
+    <!-- <type name="Eglobe\CategoryImage\Controller\Adminhtml\Category\Mobile\Upload">
+        <arguments>
+            <argument name="imageUploader" xsi:type="object">Magento\Catalog\CategoryImageUpload</argument>
+        </arguments>
+    </type> -->
+
+    <type name="Magento\Catalog\Controller\Adminhtml\Category\Save">
+        <plugin name="eglobe_image_preprocessing" type="Eglobe\CategoryImage\Plugin\Catalog\Controller\Adminhtml\Category\SavePlugin" />
+    </type>
+
+    <type name="Magento\Catalog\Model\Category\DataProvider">
+        <plugin name="eglobe_category_data_provider" type="Eglobe\CategoryImage\Plugin\Catalog\Model\Category\DataProviderPlugin" />
+    </type>
+</config>

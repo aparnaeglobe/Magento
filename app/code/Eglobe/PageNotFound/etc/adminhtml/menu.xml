@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Eglobe_PageNotFound::pagelog" title="404 Logging System" module="Eglobe_PageNotFound" sortOrder="51" resource="Eglobe_PageNotFound::pagelog" />
+        <add id="Eglobe_PageNotFound::manage" title="PageNotFound Logger" module="Eglobe_PageNotFound" sortOrder="10" action="pagelog/pagenotfoundmodel/index" resource="Eglobe_PageNotFound::manage" parent="Eglobe_PageNotFound::pagelog" />
+    </menu>
+</config>

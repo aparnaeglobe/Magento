@@ -4,8 +4,7 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'Eglobe_StoreModule',
+    'Eglobe_TestModule',
     __DIR__
 );
-
 
