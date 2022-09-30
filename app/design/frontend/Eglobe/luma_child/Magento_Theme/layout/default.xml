@@ -1,0 +1,24 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+     <!-- To add Footer links About Us and Customer Service -->
+        <referenceBlock name="footer_links">
+        <!-- <block class="Magento\Framework\View\Element\Template" name="footer_logo" template="Magento_Theme::footerlogo.phtml" before="about-us"/>  -->
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="about-us" before="search-term-popular-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">About us</argument>
+                    <argument name="path" xsi:type="string">about-us</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="customer-service" after="about-us">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Customer Service</argument>
+                    <argument name="path" xsi:type="string">customer-service</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    <!-- To remove header panel that shows welcome text -->
+        <referenceContainer name="header.container">
+            <referenceBlock name="header.panel.wrapper" remove="true" />
+        </referenceContainer>
+    </body>
+</page>

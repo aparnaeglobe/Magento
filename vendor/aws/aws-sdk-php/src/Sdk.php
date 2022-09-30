@@ -66,6 +66,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionBackup(array $args = [])
  * @method \Aws\BackupGateway\BackupGatewayClient createBackupGateway(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionBackupGateway(array $args = [])
+ * @method \Aws\BackupStorage\BackupStorageClient createBackupStorage(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionBackupStorage(array $args = [])
  * @method \Aws\Batch\BatchClient createBatch(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionBatch(array $args = [])
  * @method \Aws\BillingConductor\BillingConductorClient createBillingConductor(array $args = [])
@@ -350,6 +352,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionLexRuntimeV2(array $args = [])
  * @method \Aws\LicenseManager\LicenseManagerClient createLicenseManager(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionLicenseManager(array $args = [])
+ * @method \Aws\LicenseManagerUserSubscriptions\LicenseManagerUserSubscriptionsClient createLicenseManagerUserSubscriptions(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionLicenseManagerUserSubscriptions(array $args = [])
  * @method \Aws\Lightsail\LightsailClient createLightsail(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionLightsail(array $args = [])
  * @method \Aws\LocationService\LocationServiceClient createLocationService(array $args = [])
@@ -454,6 +458,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionPolly(array $args = [])
  * @method \Aws\Pricing\PricingClient createPricing(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionPricing(array $args = [])
+ * @method \Aws\PrivateNetworks\PrivateNetworksClient createPrivateNetworks(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionPrivateNetworks(array $args = [])
  * @method \Aws\PrometheusService\PrometheusServiceClient createPrometheusService(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionPrometheusService(array $args = [])
  * @method \Aws\Proton\ProtonClient createProton(array $args = [])
@@ -488,6 +494,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionResourceGroupsTaggingAPI(array $args = [])
  * @method \Aws\RoboMaker\RoboMakerClient createRoboMaker(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionRoboMaker(array $args = [])
+ * @method \Aws\RolesAnywhere\RolesAnywhereClient createRolesAnywhere(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionRolesAnywhere(array $args = [])
  * @method \Aws\Route53\Route53Client createRoute53(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionRoute53(array $args = [])
  * @method \Aws\Route53Domains\Route53DomainsClient createRoute53Domains(array $args = [])
@@ -623,7 +631,7 @@ namespace Aws;
  */
 class Sdk
 {
-    const VERSION = '3.227.1';
+    const VERSION = '3.233.0';
 
     /** @var array Arguments for creating clients */
     private $args;

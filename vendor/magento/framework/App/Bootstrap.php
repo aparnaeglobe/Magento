@@ -14,6 +14,7 @@ use Magento\Framework\Autoload\Populator;
 use Magento\Framework\Config\File\ConfigFilePool;
 use Magento\Framework\Filesystem\DriverPool;
 use Magento\Framework\HTTP\PhpEnvironment\Response;
+use \Magento\Framework\Model\AbstractModel ;
 use Psr\Log\LoggerInterface;
 
 /**

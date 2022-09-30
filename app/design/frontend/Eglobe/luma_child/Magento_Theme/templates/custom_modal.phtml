@@ -1,0 +1,38 @@
+<?php 
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$customerSession = $objectManager->get('Magento\Customer\Model\Session');
+if($customerSession->isLoggedIn()) {
+?>
+   <!-- customer login action -->
+   <div class="main-block">
+    <div class="content">
+    	
+    </div>
+    <!-- Your Popup content with main div display none -->
+	<div id="popup-chart" style="display:none;">
+	    Welcome Customer to ShopCart!!
+	</div>
+</div>
+<script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal',
+            'domReady!'
+        ],
+        function($, modal) {
+    
+                    var options = {
+                        type: 'popup',
+                        responsive: true,
+                        innerScroll: true,
+                        buttons: false
+                    };
+                    var popup = modal(options, $('#popup-chart'));
+                    $("#popup-chart").modal("openModal");
+        }
+    );
+</script>
+<?php
+}
+?>

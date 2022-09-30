@@ -1,7 +1,1 @@
-[2022-06-20 09:16:28] dotdigital.DEBUG: Dotdigitalgroup_Email data installer {"type":"Dotdigitalgroup\\Email\\Setup\\Install\\Type\\InsertEmailContactTableCustomers","rows_affected":0} []
-[2022-06-20 09:16:28] dotdigital.DEBUG: Dotdigitalgroup_Email data installer {"type":"Dotdigitalgroup\\Email\\Setup\\Install\\Type\\InsertEmailContactTableSubscribers","rows_affected":0} []
-[2022-06-20 09:16:28] dotdigital.DEBUG: Dotdigitalgroup_Email data installer {"type":"Dotdigitalgroup\\Email\\Setup\\Install\\Type\\UpdateContactsWithSubscriberCustomers","rows_affected":0} []
-[2022-06-20 09:16:28] dotdigital.DEBUG: Dotdigitalgroup_Email data installer {"type":"Dotdigitalgroup\\Email\\Setup\\Install\\Type\\InsertEmailOrderTable","rows_affected":0} []
-[2022-06-20 09:16:28] dotdigital.DEBUG: Dotdigitalgroup_Email data installer {"type":"Dotdigitalgroup\\Email\\Setup\\Install\\Type\\InsertEmailReviewTable","rows_affected":0} []
-[2022-06-20 09:16:28] dotdigital.DEBUG: Dotdigitalgroup_Email data installer {"type":"Dotdigitalgroup\\Email\\Setup\\Install\\Type\\InsertEmailWishlistTable","rows_affected":0} []
-[2022-06-20 09:16:28] dotdigital.DEBUG: Dotdigitalgroup_Email data installer {"type":"Dotdigitalgroup\\Email\\Setup\\Install\\Type\\InsertEmailCatalogTable","rows_affected":0} []
+[2022-08-22 11:47:55] dotdigital.INFO: Skipping ddg_automation_sms_order_messages job run [] []

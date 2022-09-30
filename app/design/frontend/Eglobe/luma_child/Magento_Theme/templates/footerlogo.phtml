@@ -1,0 +1,7 @@
+<?php
+    $objectManager =  \Magento\Framework\App\ObjectManager::getInstance();		
+    $logo = $objectManager->get('\Magento\Theme\Block\Html\Header\Logo');
+?>
+<div class="footer-logo">
+    <img src="<?php echo $logo->getLogoSrc();?>" title="" alt="footer logo" width="170">
+</div>
